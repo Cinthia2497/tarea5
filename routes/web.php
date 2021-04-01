@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\cj1Controller;
+use App\Http\Controllers\cj2Controller;
+use App\Http\Controllers\cj3Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +21,11 @@ Route::get('/', function () {
 });
 
 
-Route::get('/c1/{c1?}', [c1Controller::class, 'show']);
+Route::get('/cj1/{id?}', [cj1Controller::class, 'show']);
 
-Route::get('/c2/{c2?}', [c2Controller::class, 'show']);
+Route::get('/cj2/{cj2?}', [cj2Controller::class, 'show']);
 
-Route::get('/c3/{c3?}', [c3Controller::class, 'show']);
+Route::get('/cj3/{cj3?}', [cj3Controller::class, 'show']);
 
 
 
